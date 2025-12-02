@@ -1,0 +1,17 @@
+{
+    "name": "TC-Snowglobe",
+    "version": "1.5.0",
+    "description": "Makecode block for TC SnowGlobe table-top toy",
+    "license": "MIT",
+    "dependencies": {
+        "core": "*"
+    },
+    "files": [
+        "README.md",
+        "i2c_snowglobe.ts"
+    ],
+    "testFiles": [
+        "test.ts"
+    ],
+    "public": true
+}
