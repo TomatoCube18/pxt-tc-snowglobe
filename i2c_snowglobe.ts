@@ -54,7 +54,7 @@ namespace tomatoCube {
      */
     //% subcategory=SnowGlobe(I2C)
     //% blockId="flip_oled" block="Rotate OLED with addr %addr"
-    //% addr.defl = 0x3C
+    //% addr.min=60 addr.max=61 addr.defl=60
     //% weight=105 
     export function flip_oled(addr: number = 60):void {
         _I2CAddr = addr
