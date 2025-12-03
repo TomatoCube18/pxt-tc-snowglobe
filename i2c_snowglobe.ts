@@ -49,13 +49,14 @@ namespace tomatoCube {
     }
 
     /**
-     * Flip OLED Display.
+     * Flip OLED Display
+     * @param addr is i2c addr, eg: 60
      */
     //% subcategory=SnowGlobe(I2C)
     //% blockId="flip_oled" block="Rotate OLED with addr %addr"
     //% addr.defl = 0x3C
     //% weight=105 
-    export function flip_oled(addr: number):void {
+    export function flip_oled(addr: number = 60):void {
         _I2CAddr = addr
         // Flip OLED
         oledCmd(160)
@@ -153,7 +154,7 @@ namespace tomatoCube {
      * Set current time to RTC IC.
      */
     //% subcategory=SnowGlobe(I2C)
-    //% blockId="set_rtc_time" block="Set the current time of %hour|: %minute|: %second| Date of %day|/ %month|/ %year|Day of %dow|to DS3231"
+    //% blockId="set_rtc_time" block="Set the current time of %hour|: %minute|: %second| Date of %day|/ %month|/ 20 %year|Day of %dow|to DS3231"
     //% hour.min=0
     //% hour.max=23
     //% minute.min=0
